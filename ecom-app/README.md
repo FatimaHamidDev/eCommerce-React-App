@@ -1,16 +1,32 @@
 # React + Vite
+📦 React Shop UI — Frontend Foundations Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project focuses on building a clean, modern shop interface using core React concepts—without routing or backend integration.
 
-Currently, two official plugins are available:
+The goal is to strengthen component structure, state management, and UI behavior before introducing additional complexity.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+What’s included
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Shop, Cart, and Checkout views
 
-## Expanding the ESLint configuration
+- State-based navigation using conditional rendering
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Reusable UI and layout components
+
+- Cart logic with derived totals
+
+- Modern responsive layout with CSS Grid
+
+
+
+What’s intentionally not included (yet)
+
+- React Router
+
+- Backend APIs
+
+- Authentication
+
+These will be added in later iterations using the same codebase.
+
