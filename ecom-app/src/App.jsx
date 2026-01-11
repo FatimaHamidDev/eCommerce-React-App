@@ -3,7 +3,7 @@ import { useState } from "react";
 import Layout from "./components/layout/Layout";
 import Shop from "./Pages/Shop";
 import Cart from "./Pages/Cart";
-import Checkout from "./Pages/Chekout";
+import Checkout from "./Pages/Checkout";
 import "./index.css";
 
 function App() {

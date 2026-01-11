@@ -1,0 +1,338 @@
+/* ---------- UNIVERSAL ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ---------- BODY ---------- */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background-color: #f8f9fb;
+  color: #1f2937;
+}
+
+/* ---------- LAYOUT ---------- */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  
+}
+
+/* ---------- HEADER ---------- */
+.header {
+  max-width: 1200px;
+  margin: 0  auto;
+  display: flex;
+  justify-content: space-between;
+
+
+  padding: 2rem 2rem;
+  border: #00000000 0.5px solid;
+  border-radius: 5px;
+  
+  box-shadow: #4b55630f 0px 4px 6px -1px, #4b5563 0px 2px 4px -1px;
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Brand / Logo */
+.header h1 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  color: #111827;
+  margin: 0;
+}
+
+/* ---------- NAV ---------- */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Nav links */
+.nav a {
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #374151;
+  padding-bottom: 0.25rem;
+
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+/* Hover */
+.nav a:hover {
+  color: #111827;
+}
+/* Active route (NavLink) */
+.nav a.active {
+  color: #111827;
+  border-bottom: 2px solid #111827;
+}
+
+
+/* ---------- UI ---------- */
+.btn {
+  padding: 0.6rem 1.2rem;
+  background-color: #111827;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #000000;
+}
+
+.input {
+  width: 100%;
+  font-size: 12px;
+  padding: 0.7rem;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  margin-bottom: 1rem;
+}
+label {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+/* ---------- PRODUCT GRID ---------- */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+/* ---------- PRODUCT CARD ---------- */
+.product-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.product-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.product-card p {
+  font-weight: 500;
+  color: #374151;
+}
+
+/* ---------- CART ---------- */
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+.cart-summary {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* ---------- LOADER ---------- */
+.loader {
+  text-align: center;
+  padding: 3rem;
+  font-weight: 500;
+}
+/* ---------- CART LAYOUT ---------- */
+.cart-top {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  height: fit-content;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.04);
+}
+.cart-bottom {
+  padding: 1.5rem;
+  border-radius: 12px;
+  float: right ;
+}
+
+/* ---------- PAGE ---------- */
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+.page h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.page p {
+  max-width: 600px;
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+}
+
+/* ---------- HOME SECTIONS ---------- */
+.home-sections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.home-sections div {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.04);
+}
+.home-sections h3 {
+  margin-bottom: 0.5rem;  
+}
+.homepage {
+  height: 500px;
+  align-content: center;
+  background-image: url('./assets/bg2.webp');
+  background-size: cover;
+  background-position: center;
+  opacity: 1.8;
+  background-color: #00000069;
+  background-blend-mode: overlay;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  margin: 0 auto;
+}
+.p-top {
+  color: white;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+.homepage h2 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+} 
+.homepage p {
+  margin-bottom: 1.5rem;
+}
+.homepage h3 {
+  margin-bottom: 0.5rem;
+}
+
+
+/* ---------- About SECTIONS ---------- */
+.aboutpage {
+    height: 500px;
+  align-content: center;
+  background-image: url('./assets/bg1.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 1.8;
+  background-color: #00000069;
+  background-blend-mode: overlay;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  margin: 0 auto;
+  color: white;
+}
+.aboutpage h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+
+/* ---------- MODAL BACKDROP ---------- */
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+/* ---------- MODAL CONTENT ---------- */
+.modal {
+  background: #ffffff;
+  padding: 2.5rem 2rem;
+  max-width: 420px;
+  width: 90%;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Watercolor-style top */
+.modal-art {
+  height: 80px;
+  background: #cfeff0;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+/* Headings */
+.modal h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+/* Text */
+.modal-text {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Divider */
+.modal-divider {
+  height: 1px;
+  background: #ddd;
+  margin: 1.5rem 0;
+}
+
+/* Discount text */
+.modal-discount {
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+/* Button */
+.btn-primary {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  background: #111827;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: #000;
+}
